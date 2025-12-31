@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Servicios ELCO</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="topbar">
+    <img src="ELCOR IMAGOTIPO NARANJA .png" class="logo-mini">
+    <nav>
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('hvac')">HVAC</button>
+        <button onclick="filtrar('obra')">Obra Civil</button>
+        <button onclick="filtrar('incendio')">Contra Incendio</button>
+        <button onclick="filtrar('electrico')">Sistema Eléctrico</button>
+        <button onclick="filtrar('datos')">Voz y Datos</button>
+    </nav>
+</header>
+
+<main>
+
+<section class="grid-catalogo" id="catalogoPrincipal">
+    <div class="card contacto" onclick="abrirDetalle('contacto')">
+    <img src="CONT.jfif">
+    <h3>Contacto</h3>
+    <p>Comunícate con nosotros</p>
+    <p>click para conocer más.</p>
+</div>
+
+
+    <div class="card hvac" onclick="abrirDetalle('hvac')">
+        <img src="hvac.jpeg">
+        <h3>Ingeniería HVAC</h3>
+        <p>Climatización, cuartos limpios y control ambiental.</p>
+        <p>click para conocer mas.</p>
+    </div>
+
+    <div class="card obra" onclick="abrirDetalle('obra')">
+        <img src="obraciv.jpeg">
+        <h3>Obra Civil e Industrial</h3>
+        <p>Naves, hospitales, oficinas y mantenimiento.</p>
+        <p>click para conocer mas.</p>
+    </div>
+
+    <div class="card incendio" onclick="abrirDetalle('incendio')">
+        <img src="SisCIN.png">
+        <h3>Sistemas Contra Incendio</h3>
+        <p>Diseño e instalación conforme normativa.</p>
+        <p>click para conocer mas.</p>
+    </div>
+
+    <div class="card electrico" onclick="abrirDetalle('electrico')">
+        <img src="ing.electrica.jpeg">
+        <h3>Sistema Eléctrico</h3>
+        <p>Instalaciones eléctricas industriales.</p>
+        <p>click para conocer mas.</p>
+    </div>
+
+    <div class="card datos" onclick="abrirDetalle('datos')">
+        <img src="vozydat.jpg">
+        <h3>Voz y Datos</h3>
+        <p>Infraestructura tecnológica.</p>
+        <p>click para conocer mas.</p>
+        
+    </div>
+    <div class="card redes" onclick="abrirDetalle('redes')">
+    <img src="redess.jfif">
+    <h3>Nuestras Redes Sociales</h3>
+    <p>click para conocer mas</p>
+</div>
+
+</section>
+<!-- ================= CONTACTO ================= -->
+<section class="detalle-servicio" id="detalle-contacto">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Contacto</h2>
+        <p>Estamos listos para atender tu proyecto y resolver tus dudas.</p>
+    </div>
+    <div class="detalle-layout">
+
+        <div class="servicios-box">
+            <h3>Información de contacto</h3>
+            <ul class="lista-pro">
+                <li>
+                    Correo:
+                    <a href="mailto:comercial@elcogroup.mx">
+                        comercial@elcogroup.mx
+                    </a>
+                </li>
+                <li>
+                    <p> CONTACTO: 722 455 6699</p>
+                    WhatsApp:
+                   <a href="https://wa.me/527224556699" target="_blank" class="btn-whatsapp">
+                   💬 Enviar WhatsApp
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= HVAC ================= -->
+<section class="detalle-servicio" id="detalle-hvac">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Ingeniería HVAC</h2>
+        <p>Diseño, instalación y control ambiental para proyectos industriales,
+           hospitalarios y especializados.</p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="tub.jpeg">
+            <img src="hv.jpeg">
+            <img src="balanceo.jpeg">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Ingeniería HVAC y control ambiental</li>
+                <li>Control de temperatura y humedad</li>
+                <li>Cuartos limpios</li>
+                <li>Fabricación de UMAs</li>
+                <li>Bag In / Bag Out</li>
+                <li>Flujo laminar</li>
+                <li>Balanceo, validación y mantenimiento</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= OBRA CIVIL ================= -->
+<section class="detalle-servicio" id="detalle-obra">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Obra Civil e Industrial</h2>
+        <p>Desarrollo de infraestructura industrial, hospitalaria
+           y proyectos llave en mano.</p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="115.jpg">
+            <img src="2.jpg">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Naves industriales</li>
+                <li>Hospitales y laboratorios</li>
+                <li>Estructuras metálicas</li>
+                <li>Cimentaciones</li>
+                <li>Mantenimiento industrial</li>
+                <li>Proyectos llave en mano</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTRA INCENDIO ================= -->
+<section class="detalle-servicio" id="detalle-incendio">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Sistemas Contra Incendio</h2>
+        <p>Diseño e instalación de sistemas contra incendio
+           conforme a normativas nacionales e internacionales.</p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="f1.jpeg">
+            <img src="SisCIN.png">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Diseño e instalación SCI</li>
+                <li>Rociadores automáticos</li>
+                <li>Alarmas y detección</li>
+                <li>Laboratorios y almacenes</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SISTEMA ELÉCTRICO ================= -->
+<section class="detalle-servicio" id="detalle-electrico">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Sistema Eléctrico</h2>
+        <p>Soluciones eléctricas industriales seguras,
+           eficientes y conforme a normativa.</p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="2e.jpeg">
+            <img src="3e.jpeg">
+            <img src="1e.jpeg">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Instalaciones eléctricas industriales</li>
+                <li>Subestaciones</li>
+                <li>Tableros de distribución</li>
+                <li>Tierras físicas y pararrayos</li>
+                <li>Mantenimiento eléctrico</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= VOZ Y DATOS ================= -->
+<section class="detalle-servicio" id="detalle-datos">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Voz y Datos</h2>
+        <p>Infraestructura tecnológica confiable
+           para entornos corporativos e industriales.</p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="yored.jfif">
+            <img src="canal.jfif">
+            <img src="rack.jfif">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Cableado estructurado</li>
+                <li>Voz y datos</li>
+                <li>Fibra óptica</li>
+                <li>Racks y centros de carga</li>
+                <li>Infraestructura TI</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- ================= REDES SOCIALES ================= -->
+<section class="detalle-servicio" id="detalle-redes">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>Redes Sociales</h2>
+        <p>Presencia digital profesional para fortalecer la imagen,
+           comunicación y posicionamiento de la empresa.</p>
+    </div>
+
+    <div class="detalle-layout">
+
+        <div class="galeria galeria-principal">
+            <img src="insta.jfif">
+            <img src="fac.jfif">
+            <img src="tik.jfif">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Nuestras plataformas</h3>
+            <ul class="lista-pro">
+                <li>
+                    Facebook – 
+                    <a href="https://www.facebook.com/share/1HUrzRaB9T/?mibextid=wwXIfr" target="_blank">
+                        Ver página
+                    </a>
+                </li>
+                <li>
+                    Instagram – 
+                    <a href="https://www.instagram.com/grupoelco?igsh=MWNkemJzd2N1ZGplNA==" target="_blank">
+                        Ver perfil
+                    </a>
+                </li>
+                <li>
+                    TikTok – 
+                    <a href="https://www.tiktok.com/@grupoelco0?_r=1&_t=ZS-92fDNF0KG8a" target="_blank">
+                        Ver perfil
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+</main>
+
+<script src="catalogo.js"></script>
+</body>
+</html>

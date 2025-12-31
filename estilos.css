@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+}
+
+/* LANDING */
+.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(11,44,68,0.75), rgba(11,44,68,0.75)),
+        url("fondo.jpeg") center / cover no-repeat;
+    color: white;
+}
+
+.landing-box {
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 25px;
+    background: #f68009;
+    padding: 14px 34px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* TOPBAR */
+.topbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo-mini {
+    height: 50px;
+}
+
+.topbar nav button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* GRID */
+.grid-catalogo {
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+    overflow: hidden;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 18px;
+    color: #0b2c44;
+}
+
+.card p {
+    margin: 0 18px 22px;
+}
+
+/* ================= DETALLE PRO ================= */
+
+.detalle-servicio {
+    display: none;
+    padding: 90px 8%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.detalle-header {
+    margin-bottom: 50px;
+}
+
+.detalle-header h2 {
+    font-size: 2.6rem;
+    color: #0b2c44;
+    border-left: 8px solid #f68009;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
+.detalle-header p {
+    max-width: 700px;
+    color: #4a4a4a;
+    font-size: 1.1rem;
+}
+
+.detalle-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* GALERÍA LIMPIA 2 IMÁGENES */
+.galeria-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeria-principal img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,.25);
+}
+
+
+
+.servicios-box {
+    background: white;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+.servicios-box h3 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    color: #0b2c44;
+}
+
+.lista-pro {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-pro li {
+    padding: 14px 15px;
+    margin-bottom: 12px;
+    background: #f4f6f8;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    color: #0b2c44;
+}
+
+.lista-pro li::before {
+    content: "✔ ";
+    color: #f68009;
+    font-weight: bold;
+}
+
+.btn-volver {
+    background: none;
+    border: none;
+    color: #f68009;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .detalle-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* LINKS EN SERVICIO REDES */
+.lista-pro a {
+    color: #f68009;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.lista-pro a:hover {
+    text-decoration: underline;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* LANDING */
+    .logo {
+        width: 140px;
+    }
+
+    .landing-box h1 {
+        font-size: 1.8rem;
+    }
+
+    .landing-box p {
+        font-size: 1rem;
+    }
+
+    /* TOPBAR */
+    .topbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .topbar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .topbar nav button {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        background: #f4f6f8;
+        border-radius: 8px;
+    }
+
+    /* GRID */
+    .grid-catalogo {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    /* DETALLE */
+    .detalle-servicio {
+        padding: 50px 20px;
+    }
+
+    .detalle-header h2 {
+        font-size: 2rem;
+    }
+
+    .detalle-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .galeria-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-principal img {
+        height: 220px;
+    }
+
+    .servicios-box {
+        padding: 25px;
+    }
+
+    .lista-pro li {
+        font-size: 0.95rem;
+    }
+
+    .btn-volver {
+        font-size: 0.95rem;
+    }
+}
+
+
