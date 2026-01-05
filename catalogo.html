@@ -30,6 +30,12 @@
     <p>click para conocer más.</p>
 </div>
 
+<div class="card hse" onclick="abrirDetalle('hse')">
+    <img src="HS&E ELCO.jfif">
+    <h3>HS&E</h3>
+    <p>Seguridad, Higiene y Medio Ambiente.</p>
+    <p>click para conocer más.</p>
+</div>
 
     <div class="card hvac" onclick="abrirDetalle('hvac')">
         <img src="hvac.jpeg">
@@ -256,6 +262,43 @@
         </div>
     </div>
 </section>
+<!-- ================= HS&E ================= -->
+<section class="detalle-servicio" id="detalle-hse">
+    <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
+
+    <div class="detalle-header">
+        <h2>HS&E – Seguridad, Higiene y Medio Ambiente</h2>
+        <p>
+            Servicios especializados en seguridad industrial, higiene,
+            medio ambiente y salud laboral, cumpliendo normatividad
+            nacional e internacional.
+        </p>
+    </div>
+
+    <div class="detalle-layout">
+        <div class="galeria galeria-principal">
+            <img src="HE1.jfif">
+            <img src="HE2.jfif">
+            <img src="HE3.jfif">
+        </div>
+
+        <div class="servicios-box">
+            <h3>Alcance de nuestros servicios</h3>
+            <ul class="lista-pro">
+                <li>Supervisión HS&E en obra</li>
+                <li>Cursos STPS y constancias laborales</li>
+                <li>Planes de emergencia y brigadas</li>
+                <li>Carpetas de seguridad y Protección Civil</li>
+                <li>Registro REPSE y SIRCE</li>
+                <li>Impacto ambiental (MIA / EIA)</li>
+                <li>Gestión de residuos peligrosos</li>
+                <li>Aplicación NOM-035-STPS-2018</li>
+                <li>Programas de salud mental laboral</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <!-- ================= REDES SOCIALES ================= -->
 <section class="detalle-servicio" id="detalle-redes">
     <button class="btn-volver" onclick="volverCatalogo()">← Volver</button>
@@ -302,9 +345,9 @@
 </section>
 
 
-
 </main>
 
 <script src="catalogo.js"></script>
 </body>
 </html>
+
