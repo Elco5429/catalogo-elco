@@ -6,10 +6,58 @@
 <title>Servicios ELCO</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
+<!-- ================= MODAL COTIZACIÓN ================= -->
+<div id="modalCotiza" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarCotizacion()">×</span>
+
+        <h2>Cotiza con nosotros</h2>
+        <p>Cuéntanos sobre tu proyecto</p>
+
+        <form>
+            <label>Nombre *</label>
+            <input type="text" id="nombre" required>
+
+            <label>Empresa*</label>
+            <input type="text" id="empresa" required>
+
+            <label>Correo*</label>
+           <input type="email" id="correo" required>
+
+           <label>Servicio(s) *</label>
+           <select id="servicio" multiple required>
+        <option value="Ingeniería HVAC">Ingeniería HVAC</option>
+        <option value="Obra Civil">Obra Civil</option>
+        <option value="Sistemas Contra Incendio">Sistemas Contra Incendio</option>
+        <option value="Sistema Eléctrico">Sistema Eléctrico</option>
+        <option value="Voz y Datos">Voz y Datos</option>
+        <option value="HS&E">HS&E</option>
+              </select>
+<small style="color:#dc7a29;font-size:.85rem">
+    Mantén presionado Ctrl o Cmd para seleccionar varios servicios
+</small>
+
+            <label>Comentario del proyecto</label>
+            <textarea id="mensaje" rows="4"
+                placeholder="Describe brevemente tu proyecto"></textarea>
+
+            <button type="button" onclick="enviarWhatsApp()">
+                💬 Enviar por WhatsApp
+            </button>
+        </form>
+    </div>
+</div>
+
 <body>
 
 <header class="topbar">
-    <img src="ELCOR IMAGOTIPO NARANJA .png" class="logo-mini">
+    <div class="brand">
+        <img src="ELCOR IMAGOTIPO NARANJA .png" class="logo-mini">
+        <span class="brand-text">ELCO</span>
+    </div>
+
+    <nav>
+
     <nav>
         <button onclick="filtrar('todos')">Todos</button>
         <button onclick="filtrar('hvac')">HVAC</button>
@@ -19,6 +67,11 @@
         <button onclick="filtrar('datos')">Voz y Datos</button>
     </nav>
 </header>
+<div class="barra-cotiza">
+    <button class="btn-cotiza" onclick="abrirCotizacion()">
+        Cotiza con nosotros
+    </button>
+</div>
 
 <main>
 
@@ -350,4 +403,5 @@
 <script src="catalogo.js"></script>
 </body>
 </html>
+
 
